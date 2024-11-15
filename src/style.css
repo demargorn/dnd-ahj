@@ -1,0 +1,128 @@
+body {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.board {
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 50px;
+   margin-left: 30px;
+   margin-right: 30px;
+   background-color: #316d9e;
+}
+
+.container {
+   width: 450px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   padding-top: 20px;
+   background-color: #e5e6e4;
+   border: 3px solid #a6a2a2;
+   border-radius: 5px;
+}
+
+.title {
+   font-weight: 300;
+   text-transform: uppercase;
+   color: #71738e;
+   padding-left: 30px;
+}
+
+.list {
+   margin-top: 30px;
+   margin-bottom: 0;
+   padding-left: 0;
+   overflow: hidden;
+}
+
+.list-item {
+   display: flex;
+   position: relative;
+   margin: 10px;
+   padding: 15px;
+   list-style-type: none;
+   background-color: #fbfbf2;
+   border-radius: 3px;
+   font-weight: 200;
+   color: #5c5d6b;
+   box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.2);
+}
+
+.card.dragged {
+   position: absolute;
+   width: 400px;
+   pointer-events: none;
+   z-index: 999;
+}
+
+.card.invisible {
+   opacity: 0;
+}
+
+.delete-card {
+   top: 0;
+   left: 410px;
+   position: absolute;
+   color: #847577;
+
+   cursor: pointer;
+}
+
+.list-item:first-child {
+   margin-top: 0;
+}
+
+.new-card-button {
+   color: #a6a2a2;
+   padding-bottom: 10px;
+   text-decoration: none;
+   border: none;
+   background: transparent;
+}
+
+.new-card-button:hover {
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+.text-form {
+   border: none;
+   width: 430px;
+}
+
+.text-form:focus::placeholder {
+   opacity: 0;
+}
+
+.new-card-form {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.add-new-card {
+   height: 30px;
+   margin-left: 10px;
+   color: #fbfbf2;
+   text-decoration: none;
+   border: none;
+   border-radius: 3px;
+   background: #847577;
+   box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.2);
+   cursor: pointer;
+}
+
+.add-new-card:active {
+   background: #fbfbf2;
+   color: #847577;
+}
+
+.close-form {
+   margin-left: 10px;
+   padding-top: 3px;
+   color: #847577;
+   cursor: pointer;
+}
